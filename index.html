@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de notificaciones</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 2rem auto;
+        max-width: 48rem;
+        padding: 0 1rem;
+      }
+
+      .notificacion {
+        border: 1px solid #ccc;
+        border-left-width: 0.4rem;
+        border-radius: 0.4rem;
+        margin: 1rem 0;
+        padding: 1rem;
+      }
+
+      .notificacion--info {
+        border-left-color: #2563eb;
+      }
+
+      .notificacion--warning {
+        border-left-color: #d97706;
+      }
+
+      .notificacion--error {
+        border-left-color: #dc2626;
+      }
+
+      .notificacion--leida {
+        opacity: 0.65;
+      }
+
+      .acciones {
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      button {
+        cursor: pointer;
+        padding: 0.4rem 0.7rem;
+      }
+    </style>
+    <script src="dist/app.js" defer></script>
+  </head>
+  <body>
+    <h1>Panel de notificaciones</h1>
+    <main id="contenedor-notificaciones" aria-live="polite"></main>
+  </body>
+</html>
